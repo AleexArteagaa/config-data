@@ -1,10 +1,8 @@
+server:
+  port: 8081
 spring:
-  cloud:
-    config:
-      import-check:
-        enabled: false
-
-  gateway:
+  cloud: 
+   gateway: 
     routes:
       - id: usuario
         uri: lb://usuario/
@@ -14,10 +12,8 @@ spring:
         uri: lb://evento/
         predicates:
           - Path=/evento/**
-
+          
 logging:
   level:
     org.springframework.web.servlet.mvc.method.annotation: TRACE
-
-server:
-  port: 8081
+ 
