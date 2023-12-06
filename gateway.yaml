@@ -12,6 +12,10 @@ spring:
         uri: lb://evento/
         predicates:
           - Path=/evento/**
+      - id: banco
+        uri: lb://pago/
+        predicates:
+          - Path=/pago/**
  
 logging:
   level:
