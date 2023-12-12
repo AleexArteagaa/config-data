@@ -16,6 +16,12 @@ spring:
         uri: lb://pago/
         predicates:
           - Path=/pago/**
+      - id: swagger-usuario
+        uri: lb://usuario:4444
+        predicates: 
+        - Path=/swagger-ui
+      
+       
  
 logging:
   level:
