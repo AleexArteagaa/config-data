@@ -19,7 +19,7 @@ spring:
       - id: swagger-usuario
         uri: lb://usuario/
         predicates: 
-        - Path=/swagger-ui/**
+        - Path=/swagger-usuario/**
       
        
  
