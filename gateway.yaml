@@ -17,7 +17,7 @@ spring:
         predicates:
           - Path=/pago/**
       - id: swagger-usuario
-        uri: lb://usuario:4444
+        uri: lb://usuario/
         predicates: 
         - Path=/swagger-ui/**
       
