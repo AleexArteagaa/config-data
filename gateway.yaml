@@ -7,7 +7,7 @@ spring:
       - id: usuario
         uri: lb://usuario/
         predicates:
-          - Path=/usuario/** , /swagger-ui/index.html
+          - Path=/usuario/** , /v3/api-docs/usuarios
       - id: evento
         uri: lb://evento/
         predicates:
